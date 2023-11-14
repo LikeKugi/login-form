@@ -8,6 +8,7 @@ import * as yup from 'yup';
 import { useAuth } from '@/context/AuthContext/AuthContext';
 import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { fetchData } from '@/api/fetchData';
 
 interface IForm {
   email: string;
@@ -25,15 +26,16 @@ const LoginForm = (): JSX.Element => {
     reset,
     formState: { errors },
     handleSubmit,
-    getValues,
     control
   } = useForm({ resolver: yupResolver(validationSchema) });
 
   const submitHandler = (data: IForm) => {
-    console.log(data);
-    console.log(getValues('email'));
-    login();
-    reset();
+    fetchData(data.email, data.password).then(
+      () => {
+        login();
+        reset();
+      }
+    );
   };
 
 
