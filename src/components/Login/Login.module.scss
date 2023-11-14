@@ -5,17 +5,14 @@
   place-items: center;
   place-content: center;
 }
+
 .login {
-  min-width: 50rem;
+  width: clamp(320px, 80vw, 100rem);
   display: flex;
   padding-block: 1rem;
   padding-inline: 1.5rem;
   background-color: var(--color-bg);
   box-shadow: 10px 10px 5px 0 var(--color-shadow);
-
-  @include _768 {
-    min-width: 80%;
-  }
 
   &__illustration {
     min-width: 50%;
