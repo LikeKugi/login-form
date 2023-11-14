@@ -20,3 +20,12 @@
 - React-hook-form
 - Yup
 - SCSS (Module components)
+
+## Deploy
+
+- https://login-form-sigma-indol.vercel.app/
+
+## Screenshot
+
+- [dark theme](/screenshot/img.png)
+- [light theme](/screenshot/img_1.png)
