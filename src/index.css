@@ -7,6 +7,7 @@
   --color-bg-main: #EFF0F5;
   --color-bg-input: #f0f0f0;
   --color-success: #198754;
+  --color-error: #cc0000;
   --color-link-hover: #747bff;
   --color-btn-bg: #f9f9f9;
 
@@ -29,6 +30,7 @@ a {
   text-decoration: inherit;
   transition: color 0.3s ease-in-out;
 }
+
 a:hover {
   color: var(--color-link-hover);
 }
@@ -55,9 +57,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: var(--color-link-hover);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

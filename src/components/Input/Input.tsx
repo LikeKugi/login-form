@@ -1,7 +1,7 @@
-import { FC, JSX, ReactNode, useId } from 'react';
+import { DetailedHTMLProps, FC, InputHTMLAttributes, JSX, ReactNode, useId } from 'react';
 import styles from './Input.module.scss'
 
-interface IInputProps extends  React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>{
+interface IInputProps extends  DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>{
   label: ReactNode | string;
   icon?: ReactNode
 }

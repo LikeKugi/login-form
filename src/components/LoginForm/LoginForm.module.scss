@@ -13,6 +13,10 @@
     }
   }
 
+  &__error {
+    margin-block: 0.5rem;
+    color: var(--color-error);
+  }
 
   &__actions {
     padding-block: 1rem;
@@ -20,11 +24,17 @@
     align-items: center;
     justify-content: space-between;
   }
+
   &__submit {
     width: 100%;
     background-color: var(--color-success);
   }
+
   &__help {
     margin-inline-start: auto;
+  }
+
+  &__link {
+    cursor: pointer;
   }
 }
