@@ -10,15 +10,14 @@
   display: flex;
   padding-block: 1rem;
   padding-inline: 1.5rem;
-  border-radius: 1.5rem;
-  background-color: #fff;
+  background-color: var(--color-bg);
+  box-shadow: 10px 10px 5px 0 var(--color-shadow);
 
   @include _768 {
     min-width: 80%;
   }
 
   &__illustration {
-    min-height: 50rem;
     min-width: 50%;
     background-image: url('@/assets/login-img.svg');
     background-repeat: no-repeat;
