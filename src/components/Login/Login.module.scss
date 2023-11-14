@@ -1,0 +1,32 @@
+.wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+.login {
+  min-width: 50rem;
+  display: flex;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+
+  @include _768 {
+    min-width: 80%;
+  }
+
+  &__illustration {
+    min-height: 50rem;
+    min-width: 50%;
+    background-image: url('@/assets/login-img.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    @include _768 {
+      display: none;
+    }
+  }
+}
